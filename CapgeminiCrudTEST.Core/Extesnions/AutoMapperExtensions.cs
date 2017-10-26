@@ -10,7 +10,7 @@ namespace CapgeminiCrudTEST.Core.Extesnions
     this IMappingExpression<TSource, TDestination> map,
     Expression<Func<TDestination, object>> selector)
         {
-            map.ForMember(selector, config => config.Ignore());
+            map.ForMember(selector, config => config.Ignore()).ReverseMap();
             return map;
         }
     }

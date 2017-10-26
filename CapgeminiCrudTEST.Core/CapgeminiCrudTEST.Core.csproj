@@ -58,6 +58,23 @@
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Extesnions\AutoMapperExtensions.cs" />
     <Compile Include="IoC\MappingModule.cs" />
+    <Compile Include="Migrations\201710261113231_InitialCreate.cs" />
+    <Compile Include="Migrations\201710261113231_InitialCreate.Designer.cs">
+      <DependentUpon>201710261113231_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710261232149_Initialize.cs" />
+    <Compile Include="Migrations\201710261232149_Initialize.Designer.cs">
+      <DependentUpon>201710261232149_Initialize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710261233486_CustomerTableFix.cs" />
+    <Compile Include="Migrations\201710261233486_CustomerTableFix.Designer.cs">
+      <DependentUpon>201710261233486_CustomerTableFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710261300249_AddressTableFix.cs" />
+    <Compile Include="Migrations\201710261300249_AddressTableFix.Designer.cs">
+      <DependentUpon>201710261300249_AddressTableFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +85,19 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710261113231_InitialCreate.resx">
+      <DependentUpon>201710261113231_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261232149_Initialize.resx">
+      <DependentUpon>201710261232149_Initialize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261233486_CustomerTableFix.resx">
+      <DependentUpon>201710261233486_CustomerTableFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261300249_AddressTableFix.resx">
+      <DependentUpon>201710261300249_AddressTableFix.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

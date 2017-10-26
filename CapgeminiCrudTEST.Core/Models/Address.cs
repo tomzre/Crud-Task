@@ -8,7 +8,7 @@
 
         public string StreetName { get; set; }
 
-        public int CustomerId { get; set; }
+
 
     }
 }

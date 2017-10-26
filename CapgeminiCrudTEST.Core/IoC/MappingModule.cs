@@ -19,15 +19,18 @@ namespace CapgeminiCrudTEST.Core.IoC
         {
             Mapper.Initialize(config =>
             {
+
                 config.ConstructServicesUsing(type => context.Kernel.Get(type));
 
                 config.CreateMap<Customer, CustomerDto>()
                     .ReverseMap()
                     .Ignore(x => x.Id);
 
+
                 config.CreateMap<Address, AddressDto>()
-                    .ReverseMap()
-                    .Ignore(x => x.Id);
+                    .Ignore(x => x.Id)
+                    .ReverseMap();
+
             });
 
             Mapper.AssertConfigurationIsValid();

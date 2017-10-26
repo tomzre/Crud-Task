@@ -59,15 +59,17 @@ namespace CapgeminiCrudTEST.WebApp.Controllers
         [HttpPut]
         public async Task<IHttpActionResult> UpdateCustomer(int id, CustomerDto customerDto)
         {
+            if (!ModelState.IsValid)
+                return BadRequest();
+
             var customerInDb = await _customerRepository.GetCustomerAsync(id);
 
             if (customerInDb == null)
                 return NotFound();
 
-            if (!ModelState.IsValid)
-                return BadRequest();
+            customerDto.Id = id;
 
-            var customer = _mapper.Map<CustomerDto, Customer>(customerDto);
+            var customer = _mapper.Map(customerDto, customerInDb);
 
             await _customerRepository.UpdateCustomerAsync(customer);
 
