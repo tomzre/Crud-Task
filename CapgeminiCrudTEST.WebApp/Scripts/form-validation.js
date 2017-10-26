@@ -1,7 +1,7 @@
 ﻿
 $(function () {
     
-    $("#customerForm").validate({
+    $("#customerFormDisplay").validate({
         
         rules: {
 

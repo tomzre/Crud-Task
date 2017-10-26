@@ -33,9 +33,13 @@ namespace CapgeminiCrudTEST.Core.Repositories
 
             if (customerInDb != null)
             {
+
                 customerInDb.Name = customer.Name;
                 customerInDb.Surname = customer.Surname;
                 customerInDb.PhoneNumber = customer.PhoneNumber;
+                customerInDb.Address.HouseNumber = customer.Address.HouseNumber;
+                customerInDb.Address.StreetName = customer.Address.StreetName;
+
 
                 await _context.SaveChangesAsync();
             }

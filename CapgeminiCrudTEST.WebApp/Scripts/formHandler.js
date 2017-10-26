@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     console.log("formhandler loaded");
-    $("#customerForm").submit(function (event) {
+    $("#customerFormDisplay").submit(function (event) {
         console.log("clicked");
         event.preventDefault();
 
@@ -39,4 +39,42 @@
         
 
     });
+
+
+    $("#editDisplay").submit(function (event) {
+        event.preventDefault();
+        var getId = $("#editId").val();
+        var ename = $("#editName").val();
+        var esurname = $("#editSurname").val();
+        var ephoneNumber = $("#editPhone").val();
+        var ehouseNumber = $("#editNumber").val();
+        var estreetName = $("#editStreet").val();
+        var addressId = $("#editAddressId").val();
+
+        var editedFormData = {
+            name: ename,
+            surname: esurname,
+            phoneNumber: ephoneNumber,
+            address: {
+                id: addressId,
+                houseNumber: ehouseNumber,
+                streetName: estreetName
+            }
+        };
+
+        var json = JSON.stringify((editedFormData));
+
+        $.ajax({
+            type: "PUT",
+            url: "/api/customers/" + getId,
+            data: json,
+            success: function (data) {
+                location.reload();
+            },
+
+            dataType: "json",
+            contentType: "application/json"
+        });
+    });
+
 });

@@ -67,7 +67,7 @@ namespace CapgeminiCrudTEST.WebApp.Controllers
             if (customerInDb == null)
                 return NotFound();
 
-            customerDto.Id = id;
+
 
             var customer = _mapper.Map(customerDto, customerInDb);
 

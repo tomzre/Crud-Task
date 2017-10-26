@@ -5,7 +5,7 @@
 
 <h2>Index</h2>
 
-<table class="table table-hover" id="customer-table">
+<table class="table table-hover display" id="customer-tableDisplay">
     <thead>
         <tr>
             
@@ -14,41 +14,86 @@
             <th>Phone Number</th>
             <th>Address</th>
             <th>Delete</th>
+            
         </tr>
     </thead>
+    <tbody class="table-body">
+        
+    </tbody>
 </table>
 
+<hr/>
 
+<button id="btnAdd" class="btn-link">Add</button>
+
+<button id="btnList" class="btn-link">Show Data</button>
+
+
+<hr/>
 <div class="col-md-4">
     
-        <form id="customerForm" method="post">
+        <form id="customerFormDisplay" class="display" method="post">
             
             <div class="form-group">
-                <label for="name">Name</label></br>
+                <label for="name">Name</label> <br/>
                 <input id="name" name="name" type="text" />
             </div>
             <div class="form-group">
-                <label for="surname">Surname</label> </br>
+                <label for="surname">Surname</label> <br/>
                 <input id="surname" name="surname" type="text" />
             </div>
             <div class="form-group">
-                <label for="phone">Phone number</label></br>
+                <label for="phone">Phone number</label><br/>
                 <input id="phone" name="phone" type="text" />
             </div>
             <div class="form-group">
-                <label for="number">House number</label></br>
+                <label for="number">House number</label><br/>
                 <input id="number" name="number" type="text" />
             </div>
             <div class="form-group">
-                <label for="street">Street name</label></br>
+                <label for="street">Street name</label><br/>
                 <input id="street" name="street" type="text" />
                 
             </div>
-                <button type="submit">Save</button>
+                <button type="submit">Add</button>
 
 </form>
    
     
+</div>
+
+
+<div class="col-md-4">
+
+    <form id="editDisplay" class="display" method="post">
+        <input id="editId" type="hidden" />
+        <input id="editAddressId" type="hidden" />
+        <div class="form-group">
+            <label for="editName">Name</label> <br />
+            <input id="editName" name="name" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="editSurname">Surname</label> <br />
+            <input id="editSurname" name="surname" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="editPhone">Phone number</label><br />
+            <input id="editPhone" name="phone" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="editNumber">House number</label><br />
+            <input id="editNumber" name="number" type="text" />
+        </div>
+        <div class="form-group">
+            <label for="editStreet">Street name</label><br />
+            <input id="editStreet" name="street" type="text" />
+
+        </div>
+        <button type="submit">Save</button>
+
+    </form>
+
+
 </div>
     
 

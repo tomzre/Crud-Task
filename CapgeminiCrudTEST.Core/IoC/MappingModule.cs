@@ -28,8 +28,8 @@ namespace CapgeminiCrudTEST.Core.IoC
 
 
                 config.CreateMap<Address, AddressDto>()
-                    .Ignore(x => x.Id)
-                    .ReverseMap();
+                    .ReverseMap()
+                    .Ignore(x => x.Id);
 
             });
 

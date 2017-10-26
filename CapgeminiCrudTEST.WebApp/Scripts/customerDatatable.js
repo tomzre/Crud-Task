@@ -1,5 +1,14 @@
 ﻿$(document).ready(function () {
-    var table = $("#customer-table").DataTable({
+
+    function selectView(view) {
+        $(".display").not("#" + view + "Display").hide();
+        $("#" + view + "Display").show();
+    }
+
+    selectView("customer-table");
+
+    var table = $("#customer-tableDisplay").DataTable({
+       
         ajax: {
             url: "/api/customers",
             dataSrc: ""
@@ -9,7 +18,8 @@
             {
                 data: "name",
                 render: function (data, type, customer) {
-                    return "<a href='/home/edit/" + customer.id + "'>" + customer.name + "</a>";
+                    
+                    return "<button id='btnEdit' class='btn-link'  data-customer-id=" + customer.id + ">" + customer.name + "</button>";
                 }
             },
             {
@@ -30,7 +40,7 @@
         ]
     });
 
-    $("#customer-table").on("click", ".dt-remove", function () {
+    $("#customer-tableDisplay").on("click", ".dt-remove", function () {
         var button = $(this);
 
         $.ajax({
@@ -41,6 +51,38 @@
 
             }
         });
+    });
+
+    $("#btnAdd").on("click", function () { selectView("customerForm"); });
+    $("#btnList").on("click", function () {
+        selectView("customer-table");
+        
+    });
+    $(document).delegate("#btnEdit", "click", function () {
+        var editbtn = $(this);
+        
+        $.ajax({
+            url: "/api/customers/" + editbtn.attr("data-customer-id"),
+            method: "GET",
+            success: function (data) {
+                $("#editId").val(data.id);
+                $("#editAddressId").val(data.address.id);
+                $("#editName").val(data.name);
+                $("#editSurname").val(data.surname);
+                $("#editPhone").val(data.phoneNumber);
+                $("#editStreet").val(data.address.streetName);
+                $("#editNumber").val(data.address.houseNumber)
+                selectView("edit"); 
+                console.log("succeced");
+            },
+            error: function (jqXHR, exception) {
+                console.log(jqXHR.responseText);
+            }
+
+
+        });
+
+
     });
 
 
