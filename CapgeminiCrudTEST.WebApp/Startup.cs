@@ -1,9 +1,13 @@
 ﻿using Microsoft.Owin;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Ninject;
+using Ninject.Web.Common.OwinHost;
+using Ninject.Web.WebApi.OwinHost;
 using Owin;
 using System.Net.Http.Formatting;
 using System.Net.Http.Headers;
+using System.Reflection;
 using System.Web.Http;
 
 [assembly: OwinStartup(typeof(CapgeminiCrudTEST.WebApp.Startup))]
@@ -33,6 +37,43 @@ namespace CapgeminiCrudTEST.WebApp
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            app.UseNinjectMiddleware(CreateKernel);
+            app.UseNinjectWebApi(config);
         }
+
+        private static IKernel CreateKernel()
+        {
+
+
+            var kernel = new StandardKernel();
+            try
+            {
+                kernel.Load(Assembly.GetExecutingAssembly());
+
+                //kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
+                //kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+
+                RegisterServices(kernel);
+
+                return kernel;
+            }
+            catch
+            {
+                kernel.Dispose();
+                throw;
+            }
+        }
+
+
+        private static void RegisterServices(IKernel kernel)
+        {
+
+
+
+
+        }
+
+
     }
 }
