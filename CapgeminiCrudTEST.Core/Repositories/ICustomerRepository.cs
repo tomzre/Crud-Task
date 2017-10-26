@@ -12,7 +12,7 @@ namespace CapgeminiCrudTEST.Core.Repositories
 
         Task CreateCustomerAsync(Customer customer);
 
-        Task UpdateCustomerAsync(Customer customer);
+        Task<Customer> UpdateCustomerAsync(Customer customer);
 
         Task DeleteCustomerAsync(int id);
 

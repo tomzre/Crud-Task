@@ -1,4 +1,6 @@
-﻿using Microsoft.Owin;
+﻿using CapgeminiCrudTEST.Core.IoC;
+using CapgeminiCrudTEST.Core.Repositories;
+using Microsoft.Owin;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Ninject;
@@ -46,7 +48,7 @@ namespace CapgeminiCrudTEST.WebApp
         {
 
 
-            var kernel = new StandardKernel();
+            var kernel = new StandardKernel(new MappingModule());
             try
             {
                 kernel.Load(Assembly.GetExecutingAssembly());
@@ -67,10 +69,7 @@ namespace CapgeminiCrudTEST.WebApp
 
         private static void RegisterServices(IKernel kernel)
         {
-
-
-
-
+            kernel.Bind<ICustomerRepository>().To<CustomerRepository>();
         }
 
 
