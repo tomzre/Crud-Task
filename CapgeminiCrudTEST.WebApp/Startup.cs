@@ -51,8 +51,7 @@ namespace CapgeminiCrudTEST.WebApp
             {
                 kernel.Load(Assembly.GetExecutingAssembly());
 
-                //kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-                //kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+
 
                 RegisterServices(kernel);
 
