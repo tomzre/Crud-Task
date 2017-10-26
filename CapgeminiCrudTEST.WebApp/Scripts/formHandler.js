@@ -10,17 +10,17 @@
         var houseNumber = $("#number").val();
         var streetName = $("#street").val();
 
+        
 
-
-        var formData =  {
+        var formData = {
             name: name,
             surname: surname,
             phoneNumber: phoneNumber,
             address: {
                 houseNumber: houseNumber,
                 streetName: streetName
-                    }
             }
+        };
 
         var json = JSON.stringify((formData));
 
@@ -28,14 +28,15 @@
             type: "POST",
             url: "/api/customers",
             data: json,
-            succes: function () {
-
+            success: function (data) {
+                location.reload();
             },
+            
             dataType: "json",
             contentType: "application/json"
         });
 
-        console.log(json);
+        
 
     });
 });

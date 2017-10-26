@@ -9,7 +9,7 @@
             {
                 data: "name",
                 render: function (data, type, customer) {
-                    return "<a href='/home/edit/" + customer.id + "'>" + customer.name + "</a>"
+                    return "<a href='/home/edit/" + customer.id + "'>" + customer.name + "</a>";
                 }
             },
             {
@@ -24,7 +24,7 @@
             {
                 data: "id",
                 render: function (data) {
-                    return "<button class='btn-link dt-remove' data-customer-id=" + data + ">Delete</button>"
+                    return "<button class='btn-link dt-remove' data-customer-id=" + data + ">Delete</button>";
                 }
             }
         ]
