@@ -2,7 +2,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace CapgeminiCrudTEST.Core.Extesnions
+namespace CapgeminiCrudTEST.Core.Extensions
 {
     public static class AutoMapperExtensions
     {

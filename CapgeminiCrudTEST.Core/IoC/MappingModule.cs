@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using CapgeminiCrudTEST.Core.Dtos;
-using CapgeminiCrudTEST.Core.Extesnions;
+using CapgeminiCrudTEST.Core.Extensions;
 using CapgeminiCrudTEST.Core.Models;
 using Ninject;
 using Ninject.Activation;

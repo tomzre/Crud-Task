@@ -56,7 +56,7 @@
     <Compile Include="Concrete\ApplicationDbContext.cs" />
     <Compile Include="Dtos\AddressDto.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
-    <Compile Include="Extesnions\AutoMapperExtensions.cs" />
+    <Compile Include="Extensions\AutoMapperExtensions.cs" />
     <Compile Include="IoC\MappingModule.cs" />
     <Compile Include="Migrations\201710261113231_InitialCreate.cs" />
     <Compile Include="Migrations\201710261113231_InitialCreate.Designer.cs">
