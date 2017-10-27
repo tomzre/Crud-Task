@@ -191,6 +191,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\customerDatatable.js" />
     <Content Include="Scripts\datatables.min.js" />
+    <Content Include="Scripts\editform-validation.js" />
     <Content Include="Scripts\form-validation.js" />
     <Content Include="Scripts\formHandler.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

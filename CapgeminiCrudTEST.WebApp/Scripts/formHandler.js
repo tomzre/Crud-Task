@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
-    console.log("formhandler loaded");
+    
     $("#customerFormDisplay").submit(function (event) {
-        console.log("clicked");
+        
         event.preventDefault();
 
         var name = $("#name").val();
@@ -43,6 +43,7 @@
 
     $("#editDisplay").submit(function (event) {
         event.preventDefault();
+
         var getId = $("#editId").val();
         var ename = $("#editName").val();
         var esurname = $("#editSurname").val();
