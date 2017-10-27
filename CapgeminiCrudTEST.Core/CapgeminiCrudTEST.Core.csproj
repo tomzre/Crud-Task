@@ -74,6 +74,10 @@
     <Compile Include="Migrations\201710261300249_AddressTableFix.Designer.cs">
       <DependentUpon>201710261300249_AddressTableFix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710270557095_CustomerAddressTableNotNullProperties.cs" />
+    <Compile Include="Migrations\201710270557095_CustomerAddressTableNotNullProperties.Designer.cs">
+      <DependentUpon>201710270557095_CustomerAddressTableNotNullProperties.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710261300249_AddressTableFix.resx">
       <DependentUpon>201710261300249_AddressTableFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710270557095_CustomerAddressTableNotNullProperties.resx">
+      <DependentUpon>201710270557095_CustomerAddressTableNotNullProperties.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
