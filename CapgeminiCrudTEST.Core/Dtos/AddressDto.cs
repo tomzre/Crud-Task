@@ -9,8 +9,5 @@ namespace CapgeminiCrudTEST.Core.Dtos
         public int HouseNumber { get; set; }
         [Required]
         public string StreetName { get; set; }
-
-
-
     }
 }
