@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace CapgeminiCrudTEST.WebApp
+namespace CrudTT.WebApp
 {
     public class RouteConfig
     {

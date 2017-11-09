@@ -218,9 +218,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CapgeminiCrudTEST.Core\CapgeminiCrudTEST.Core.csproj">
+    <ProjectReference Include="..\CapgeminiCrudTEST.Core\CrudTT.Core.csproj">
       <Project>{406b7f0a-90a1-4fd8-abd7-5ea24b60d56e}</Project>
-      <Name>CapgeminiCrudTEST.Core</Name>
+      <Name>CrudTT.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

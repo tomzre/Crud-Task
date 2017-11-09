@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace CapgeminiCrudTEST.Core.Dtos
+namespace CrudTT.Core.Dtos
 {
     public class AddressDto
     {

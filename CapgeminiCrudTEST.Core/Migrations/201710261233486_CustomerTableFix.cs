@@ -1,4 +1,4 @@
-namespace CapgeminiCrudTEST.Core.Migrations
+namespace CrudTT.Core.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

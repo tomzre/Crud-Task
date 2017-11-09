@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapgeminiCrudTEST.WebApp", "CapgeminiCrudTEST.WebApp\CapgeminiCrudTEST.WebApp.csproj", "{18F348E4-E022-494C-8EC6-999EFB34DC99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudTT.WebApp", "CapgeminiCrudTEST.WebApp\CrudTT.WebApp.csproj", "{18F348E4-E022-494C-8EC6-999EFB34DC99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapgeminiCrudTEST.Core", "CapgeminiCrudTEST.Core\CapgeminiCrudTEST.Core.csproj", "{406B7F0A-90A1-4FD8-ABD7-5EA24B60D56E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrudTT.Core", "CapgeminiCrudTEST.Core\CrudTT.Core.csproj", "{406B7F0A-90A1-4FD8-ABD7-5EA24B60D56E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

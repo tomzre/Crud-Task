@@ -1,11 +1,11 @@
-namespace CapgeminiCrudTEST.Core.Migrations
+namespace CrudTT.Core.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<CapgeminiCrudTEST.Core.Concrete.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<CrudTT.Core.Concrete.ApplicationDbContext>
     {
         public Configuration()
         {
@@ -13,7 +13,7 @@ namespace CapgeminiCrudTEST.Core.Migrations
             ContextKey = "CapgeminiCrudTEST.Core.Concrete.ApplicationDbContext";
         }
 
-        protected override void Seed(CapgeminiCrudTEST.Core.Concrete.ApplicationDbContext context)
+        protected override void Seed(CrudTT.Core.Concrete.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

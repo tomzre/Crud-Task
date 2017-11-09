@@ -1,10 +1,10 @@
-﻿using CapgeminiCrudTEST.Core.Concrete;
-using CapgeminiCrudTEST.Core.Models;
+﻿using CrudTT.Core.Concrete;
+using CrudTT.Core.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Threading.Tasks;
 
-namespace CapgeminiCrudTEST.Core.Repositories
+namespace CrudTT.Core.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {

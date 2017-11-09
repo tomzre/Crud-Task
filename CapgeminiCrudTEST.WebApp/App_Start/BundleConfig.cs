@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace CapgeminiCrudTEST.WebApp
+namespace CrudTT.WebApp
 {
     public class BundleConfig
     {

@@ -1,7 +1,7 @@
-﻿using CapgeminiCrudTEST.Core.Models;
+﻿using CrudTT.Core.Models;
 using System.Data.Entity;
 
-namespace CapgeminiCrudTEST.Core.Concrete
+namespace CrudTT.Core.Concrete
 {
     public class ApplicationDbContext : DbContext
     {

@@ -1,4 +1,4 @@
-﻿namespace CapgeminiCrudTEST.Core.Models
+﻿namespace CrudTT.Core.Models
 {
     public class Address
     {

@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using CapgeminiCrudTEST.Core.Dtos;
-using CapgeminiCrudTEST.Core.Extensions;
-using CapgeminiCrudTEST.Core.Models;
+using CrudTT.Core.Dtos;
+using CrudTT.Core.Extensions;
+using CrudTT.Core.Models;
 using Ninject;
 using Ninject.Activation;
 using Ninject.Modules;
 
-namespace CapgeminiCrudTEST.Core.IoC
+namespace CrudTT.Core.IoC
 {
     public class MappingModule : NinjectModule
     {

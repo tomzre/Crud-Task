@@ -1,13 +1,13 @@
 ﻿using AutoMapper;
-using CapgeminiCrudTEST.Core.Dtos;
-using CapgeminiCrudTEST.Core.Models;
-using CapgeminiCrudTEST.Core.Repositories;
+using CrudTT.Core.Dtos;
+using CrudTT.Core.Models;
+using CrudTT.Core.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Web.Http;
 
-namespace CapgeminiCrudTEST.WebApp.Controllers
+namespace CrudTT.WebApp.Controllers
 {
     public class CustomersController : ApiController
     {

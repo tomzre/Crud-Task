@@ -1,5 +1,5 @@
-﻿using CapgeminiCrudTEST.Core.IoC;
-using CapgeminiCrudTEST.Core.Repositories;
+﻿using CrudTT.Core.IoC;
+using CrudTT.Core.Repositories;
 using Microsoft.Owin;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
@@ -12,9 +12,9 @@ using System.Net.Http.Headers;
 using System.Reflection;
 using System.Web.Http;
 
-[assembly: OwinStartup(typeof(CapgeminiCrudTEST.WebApp.Startup))]
+[assembly: OwinStartup(typeof(CrudTT.WebApp.Startup))]
 
-namespace CapgeminiCrudTEST.WebApp
+namespace CrudTT.WebApp
 {
     public class Startup
     {

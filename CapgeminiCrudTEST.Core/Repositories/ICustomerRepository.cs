@@ -1,8 +1,8 @@
-﻿using CapgeminiCrudTEST.Core.Models;
+﻿using CrudTT.Core.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CapgeminiCrudTEST.Core.Repositories
+namespace CrudTT.Core.Repositories
 {
     public interface ICustomerRepository
     {

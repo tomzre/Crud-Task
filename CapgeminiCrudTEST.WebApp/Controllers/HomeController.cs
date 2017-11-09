@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace CapgeminiCrudTEST.WebApp.Controllers
+namespace CrudTT.WebApp.Controllers
 {
     public class HomeController : Controller
     {
